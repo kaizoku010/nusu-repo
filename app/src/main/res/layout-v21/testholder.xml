@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layout"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content"
+   >
+
+    <!--holder    app:dragFromEdge="left"
+ BG-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/holder_root"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+
+
+            <!--holder_letter-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/letter_"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="A"
+                    android:id="@+id/alpha_tv"
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <!--Lower Frame-->
+
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_below="@id/letter_"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/item__"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textStyle="bold"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="ggJJg"
+                        android:textColor="@color/whiteTextColor" />
+
+                    <org.fabiomsr.moneytextview.MoneyTextView
+                        android:id="@+id/amount___"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        app:symbolTextColor="@color/textColorPrimary"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item__"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="20000"
+                        app:baseTextColor="@color/whiteTextColor"
+                        app:decimalSeparator="."
+                        app:includeDecimalSeparator="true"
+                        app:symbolGravity="end"
+                        app:symbolTextSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/time_"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amount___"
+
+                        android:layout_marginStart="2dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="22:33:83pm"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/grey3"
+            android:id="@+id/blur"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@color/textColorPrimary"
+android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/swipe_bin_"
+                android:layout_width="30dp"
+
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/delete_ic" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

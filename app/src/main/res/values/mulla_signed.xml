@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_entries">
+        <item>UGX</item>
+<!--
+        <item>TzShs</item>
+        <item>KShs</item>
+        <item>Cedes</item>
+        <item>Nairas</item>
+        <item>RandS</item>
+        <item>Dollars_</item>
+        <item>Pound</item>
+        <item>Yen</item>
+        <item>Euro</item>
+        <item>Bengali rupees</item>
+        <item>Tamil rupees</item>
+        <item>Thai bahts</item>
+        <item>Australian Dollar</item>
+        <item>Colons</item>
+        <item>Canadian Dollar</item>
+        <item>Swiss Franc</item>
+        <item>NewZealand Dollar</item>
+        <item>Chinese Yuan</item>
+        <item>Cruzeiros</item>
+        <item>Lira</item>
+        <item>Won</item>
+        <item>New Sheqel</item>
+        <item>Dong</item>
+        <item>Kip</item>
+        <item>Drachmas</item>
+        <item>Peso</item>
+        <item>BitCoin</item>
+        <item>Guaranis</item>
+        <item>Hryvnias</item>
+        <item>Indian Rupess</item>
+        <item>Turkish Lira</item>
+-->
+
+
+    </string-array>
+
+    <string-array name="currency_values">
+        <item>UGX</item>
+        <item>TzShs</item>
+        <item>KShs</item>
+        <item>₵</item>
+        <item>₦</item>
+        <item>Rnds</item>
+        <item>$</item>
+        <item>£</item>
+        <item>€</item>
+        <item>৲</item>
+        <item>௹</item>
+        <item>฿</item>
+        <item>AUD</item>
+        <item>₡</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>NZD</item>
+        <item>₢</item>
+        <item>UGX</item>
+        <item>₣</item>
+        <item>₤</item>
+        <item>₩</item>
+        <item>₪</item>
+        <item>₭</item>
+        <item>₯</item>
+        <item>₱</item>
+        <item>mBTC</item>
+        <item>₲</item>
+        <item>₴</item>
+        <item>₸</item>
+        <item>₺</item>
+    </string-array>
+
+    <string-array name="mulla_val">
+        <item>Uganda</item><!--
+        <item>2</item>
+        <item>3</item>-
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>-->
+    </string-array>
+
+
+
+
+
+
+
+
+
+</resources>

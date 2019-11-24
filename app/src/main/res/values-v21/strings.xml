@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Nusu</string>
+<!--
+    <string name="google_app_id">1:333514063953:android:ffb9ac692d82b4d7</string>
+-->
+    <string name="swipe_down_the_screen_after_saving_any_item_to_refresh_the_app"> - Swipe down the screen after deleting an item to refresh the App.</string>
+    <string name="empty_view">You have no entries</string>
+    <string name="swipe_left_to_view_yo_expenses">Touch the Expenses tab to view your expenses..</string>
+    <string name="about_">About</string>
+    <string name="help_">Help</string>
+    <string name="back_to_home_screen">back to home screen</string>
+    <string name="share_my_app">share</string>
+    <string name="tap_the_green_button_below_to_add_an_item">Tap the green button below to add an item</string>
+    <string name="hint_amount">3900</string>
+    <string name="_50000" translatable="false">50000</string>
+
+
+    <string name="privacy_policy_header">About Your Data</string>
+    <string name="we_respect_your_privacy">We Respect Your Privacy.</string>
+    <string name="we_do_not_collect_user_information_during_your_usage_of_this_app">We do not collect user information as you use this App, that includes the data you insert.</string>
+    <string name="about_amp_privacy"><![CDATA[About & Privacy]]></string>
+    <string name="settings_mycashflow">Settings</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_about" translatable="false">ca-app-pub-2263309867862585/1255100953</string>
+    <string name="banner_privacy" translatable="false">ca-app-pub-2263309867862585/3902026152</string>
+
+    <!-- change the green ad to a banner from a native -->
+    <string name="banner_green_rv" translatable="false">ca-app-pub-2263309867862585/5530192151</string>
+
+    <string name="banner_red_rv" translatable="false">ca-app-pub-2263309867862585/7006925357</string>
+    <string name="banner_upgrade_app" translatable="false">ca-app-pub-2263309867862585/2169124155</string>
+    <string name="banner_help" translatable="false">ca-app-pub-2263309867862585/8556953358</string>
+
+    <string name="save">SAVE</string>
+    <string name="item_entered">Item entered</string>
+    <string name="items_entered">Items entered</string>
+    <string name="app_logo">app logo</string>
+    <string name="the_cash_green_icon">cash_entry_icon</string>
+    <string name="item_cash">Item</string>
+    <string name="cost_expense">Cost</string>
+    <string name="item">Item</string>
+    <string name="amount">Amount</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="this_separates_the_total_from_the_cash_and_xp_total">this separates the total from the cash and xp total</string>
+    <string name="warning">Warning!</string>
+
+    <string name="however_as_you_download_this_app_from_the_google_play_store_through_the_download_statistics_we_are_able_to_know_anonymously_about_your_device_model_and_os_version_telecom_operator_country_install_and_uninstall_operation_of_this_app_app_crash_report">However, as you download this app from the Google Play Store, through the download statistics, we are able to know (anonymously) about your :\n -Device model and OS Version \n -Telecom Operator \n -Country \n -Install and uninstall operations of this App \n -App crash reports</string>
+    <string name="this_is_irreversible_once_done">This is irreversible once done.</string>
+    <string name="try_to_keep_your_item_names_short"> - Try to keep your item names short</string>
+    <string name="tap_the_red_button_to_reset_the_app">Tap the red button to reset the app.</string>
+    <string name="this_is_my_first_company_logo">this is my first company logo</string>
+    <string name="if_you_like_this_app_you_can_contribute_to_its_improvement_by_downloading_and_checking_out_some_of_the_products_being_advertised_throughout_the_app">If you like this app, you can contribute to its improvement by downloading and checking out some of the products being advertised throughout the app.</string>
+    <string name="change_currency_type_by_tapping_the_currency_item_on_the_main_screen"> - Change currency type by tapping the currency item on the main screen</string>
+    <string name="feed_back">FEED BACK</string>
+    <string name="support">Support</string>
+    <string name="for_more_inquiries_please_contact_us">For more inquiries please contact us</string>
+    <string name="balance">Balance</string>
+    <string name="gcm_defaultSenderId">333514063953</string>
+    <string name="to_add_an_item">To add an item</string>
+    <string name="total_cash">TOTAL CASH</string>
+    <string name="total_expenses">TOTAL EXPENSES</string>
+    <string name="highest_cash_entry">HIGHEST CASH ENTRY</string>
+    <string name="no_data_to_display">NO DATA TO DISPLAY.</string>
+    <string name="pull_the_panels_below_to_start">Pull the panels below to start</string>
+    <string name="cash_map">CASH MAP</string>
+    <string name="all_entries_and_a_location_of_each_on_the_googleplay_map">All entries and a location of each on the GooglePlay Map.</string>
+    <string name="location_name">Location_name</string>
+    <string name="_2019_dixon_muneza">©2019 Dixon Muneza</string>
+
+</resources>

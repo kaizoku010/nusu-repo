@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_"
+    android:theme="@style/Theme.AppCompat"
+    android:transitionName="transitionNinja"
+    tools:context="com.wordpress.dixontechnologies.Mycashflow.MainActivity">
+
+    <com.wordpress.dixontechnologies.Mycashflow.NusuSplashView
+        android:id="@+id/splashView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:circleColors="@array/splash_circle_colors"
+        app:circleRadius="@dimen/splash_circle_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:removeFromParentOnEnd="true"
+        app:rotationDuration="@integer/splash_rotation_duration"
+        app:rotationRadius="@dimen/splash_rotation_radius"
+        app:splashDuration="@integer/splash_duration" />
+
+
+</android.support.constraint.ConstraintLayout>

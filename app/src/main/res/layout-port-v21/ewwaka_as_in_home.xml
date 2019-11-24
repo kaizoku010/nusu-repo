@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustResize"
+    android:elevation="4dp"
+    android:transitionName="transitionNinja"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                app:title="@string/app_name"
+                app:collapsedTitleGravity="center"
+                android:id="@+id/collapseToolbar"
+                app:collapsedTitleTextAppearance="@color/whiteTextColor"
+                app:expandedTitleTextAppearance="@color/whiteTextColor"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="@color/colorPrimary"
+                android:layout_height="195dp">
+                <include
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="parallax"
+                    layout="@layout/appname_version"/>
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:titleTextColor="@color/whiteTextColor"
+                    style="@style/nusuActionBarStyle"
+                    app:elevation="5dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:subtitle=" "
+                    app:subtitleTextColor="@color/whiteTextColor"
+                    android:background="@color/transparent"
+                    android:layout_weight="1"/>
+
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <!--            app:layout_scrollFlags="scroll|enterAlways|snap"-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:tabTextColor="@color/grey"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabRippleColor="@color/colorPrimary"
+                android:layout_gravity="bottom"
+                app:tabBackground="@color/textColorPrimary"
+                android:background="@color/textColorPrimary"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <View
+            android:id="@+id/overlay_"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/arcl_gray"
+            app:layout_anchor="@+id/viewpager"
+            app:layout_anchorGravity="bottom"
+            tools:mockup_opacity="@integer/google_play_services_version" />
+
+
+        <include
+            layout="@layout/expenses_dialog">
+        </include>
+        <include
+            layout="@layout/mycash">
+        </include>
+
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fav"
+            app:layout_behavior="@string/fab_transformation_sheet_behavior"
+            android:layout_marginEnd="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            android:src="@drawable/fab_add"
+            app:fab_hideAnimation="@anim/fab_slide_out_to_left"
+            app:fab_showAnimation="@anim/fab_slide_in_from_right"
+            app:fab_size="normal"
+            app:menu_buttonSpacing="0dp"
+            app:menu_buttonToggleAnimation="@anim/fab_scale_down"
+            app:menu_colorNormal="@color/colorAccent"
+            app:menu_colorPressed="@color/new_red"
+            android:layout_marginRight="22dp"
+            app:menu_fab_show_animation="@anim/fab_slide_in_from_right"
+            app:menu_fab_size="normal"
+            app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            app:menu_labels_margin="0dp"
+            app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            app:menu_openDirection="up">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/cash_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/new_cash_ic"
+                app:fab_label="Add Cash"
+                app:fab_size="mini"/>
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/exp_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/exp_ic_new"
+                app:fab_label="Add Expense"
+                app:fab_size="mini"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <!--
+        app:fab_colorNormal="#c100cf"-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:elevation="16dp"
+        android:background="@color/colorAccent"
+        android:theme="@style/NavBar_theme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_layout"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

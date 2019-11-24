@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whiteTextColor"
+    android:layout_height="match_parent"
+    tools:context=".Settings__">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:padding="-5dp"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/back_ic_two"
+        app:title="Settings" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/tool_"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:id="@+id/hint_"
+            android:layout_marginEnd="5dp"
+            android:text="Change Currency type here"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:tooltipText="Currency"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@id/hint_"
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinner_"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/spinner_"
+            android:text="Reset App"
+            app:elevation="4dp"
+            android:id="@+id/reset_app_btn"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

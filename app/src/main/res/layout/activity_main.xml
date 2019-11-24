@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:transitionName="transitionNinja"
+    android:id="@+id/root_layout"
+    android:background="@color/textColorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.wordpress.dixontechnologies.Mycashflow.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.eftimoff.androipathview.PathView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pathView"
+            android:layout_width="100dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            app:pathColor="@color/colorPrimary"
+            android:rotation="180"
+            android:elevation="0dp"
+            app:svg="@raw/nusu_svg_"
+            app:pathWidth="0dp" />
+
+
+        <TextView
+            android:id="@+id/appName"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/version"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Nusu"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+                android:textColor="@color/black"
+            android:text="v.1.5.0"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/version"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+
+            android:layout_centerInParent="true"
+    android:layout_above="@id/developer_"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/developer_"
+    android:layout_centerInParent="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:text="Beta"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

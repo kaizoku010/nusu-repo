@@ -1,0 +1,190 @@
+<resources>
+
+    <!--
+    <string name="google_app_id">1:333514063953:android:ffb9ac692d82b4d7</string>
+-->
+
+    <string name="app_name" translatable="false">Nusu</string>
+    <string name="swipe_down_the_screen_after_saving_any_item_to_refresh_the_app"> - Swipe down the screen after deleting an item to refresh the App.</string>
+    <string name="empty_view">You have no entries</string>
+    <string name="swipe_left_to_view_yo_expenses">Swipe left for more info..</string>
+    <string name="about_">About</string>
+    <string name="help_">Help</string>
+    <string name="back_to_home_screen">back to home screen</string>
+    <string name="share_my_app">share</string>
+    <string name="tap_the_green_button_below_to_add_an_item">Tap the green button below to add an item</string>
+    <string name="hint_amount">3900</string>
+    <string name="_50000">50000</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="_maps_api">AIzaSyAu_sp4XYwzpdPIV376gAXvp0Ru5jTuPRA</string>
+    <!--
+    <string name="gcm_defaultSenderId">333514063953</string>
+-->
+
+    <string name="privacy_policy_header">About Your Data</string>
+    <string name="we_respect_your_privacy">We Respect Your Privacy.</string>
+    <string name="we_do_not_collect_user_information_during_your_usage_of_this_app">We do not collect user information as you use this App, that includes the data you insert.</string>
+    <string name="about_amp_privacy"><![CDATA[About & Privacy]]></string>
+
+
+    <string name="facebook_id" translatable="false">1886787768220620</string>
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_about">ca-app-pub-2263309867862585/1255100953</string>
+    <string name="banner_privacy">ca-app-pub-2263309867862585/3902026152</string>
+
+    <string name="banner_green_rv">ca-app-pub-2263309867862585/5530192151</string>
+
+    <!--red ads-->
+    <!--ca-app-pub-2263309867862585/7006925357 new-->
+    <!--ca-app-pub-2263309867862585/8215657753 old ad unit-->
+    <string name="banner_red_rv">ca-app-pub-2263309867862585/7006925357</string>
+
+    <string name="banner_upgrade_app">ca-app-pub-2263309867862585/2169124155</string>
+    <string name="banner_help">ca-app-pub-2263309867862585/8556953358</string>
+    <!-- AdMob ad unit IDs -->
+
+    <string name="title_activity_upgrade_page">Upgrade_page</string>
+    <string name="save">SAVE</string>
+    <string name="item_entered">Item entered</string>
+    <string name="items_entered">Items entered</string>
+    <string name="app_logo">app logo</string>
+    <string name="the_cash_green_icon">cash_entry_icon</string>
+    <string name="item_cash">Item</string>
+    <string name="cost_expense">Cost</string>
+    <string name="item">Item</string>
+    <string name="amount">Amount</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="this_separates_the_total_from_the_cash_and_xp_total">this separates the total from the cash and xp total</string>
+    <string name="warning">Warning!</string>
+    <string name="however_as_you_download_this_app_from_the_google_play_store_through_the_download_statistics_we_are_able_to_know_anonymously_about_your_device_model_and_os_version_telecom_operator_country_install_and_uninstall_operation_of_this_app_app_crash_report">However, as you download this app from the Google Play Store, through the download statistics, we are able to know (anonymously) about your :\n .Device model and OS Version \n .Telecom Operator \n .Country \n .Install and uninstall operations of this App \n .App crash reports</string>
+    <string name="this_is_irreversible_once_done">This is irreversible once done.</string>
+    <string name="try_to_keep_your_item_names_short"> . Try to keep your item names short</string>
+
+    <string name="tap_the_red_button_to_reset_the_app">Tap the red button to reset the app.</string>
+    <string name="this_is_my_first_company_logo">this is my first company logo</string>
+    <string name="if_you_like_this_app_you_can_contribute_to_its_improvement_by_downloading_and_checking_out_some_of_the_products_being_advertised_throughout_the_app">If you like this app, you can contribute to its improvement by downloading and checking out some of the products being advertised throughout the app.</string>
+    <string name="change_currency_type_by_tapping_the_currency_item_on_the_main_screen"> - Change currency type by tapping the currency item on the main screen</string>
+    <string name="feed_back">FEED BACK</string>
+    <string name="support">Support</string>
+    <string name="author">Muneza Dixon</string>
+    <string name="for_more_inquiries_please_contact_us">For more inquiries please contact us</string>
+    <string name="balance">Balance</string>
+    <!--<string name="gcm_defaultSenderId">333514063953</string>-->
+    <string name="to_add_an_item">To add an item</string>
+    <string name="total_cash">TOTAL CASH</string>
+    <string name="total_expenses">TOTAL EXPENSES</string>
+    <string name="highest_cash_entry">HIGHEST CASH ENTRY</string>
+    <string name="no_data_to_display">NO DATA TO DISPLAY.</string>
+    <string name="pull_the_panels_below_to_start">Pull the panels below to start</string>
+    <string name="cash_map">CASH MAP</string>
+    <string name="all_entries_and_a_location_of_each_on_the_googleplay_map">All entries and a location of each on the GooglePlay Map.</string>
+    <string name="location_name">Location_name</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Muneza Dixon</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="only_digits">0123456789</string>
+
+    <string name="title_activity_fullscreen__ad_">Fullscreen_AD_Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="currency_type">currency_type</string>
+    <string name="notifications_">Receive Updates</string>
+    <string name="key_send_feedback">sendfeedback</string>
+    <string name="summary_support">Feedback</string>
+    <string name="title_send_feedback">Feedback</string>
+    <string name="email_client">email chooser</string>
+    <string name="_2020_dixon_muneza">©2020 Dixon Muneza</string>
+    <string name="_2020_nusu_corp">©2020 NusuCorp</string>
+    <string name="rest_app">rest_app</string>
+    <string name="about_nusu">Nusu enables you to keep an offline collection of information about how you spend and how you earn. Financial awareness is as important as keeping up with the stock markert, or something like being updated about anything matter to us, not having this information can sometimes be catastrophic at a cosmic level. Nusu provides a simple list of items of how you spend and how you earn because even the smallest detail matters when it comes to being woke.</string>
+    <string name="slide_desc_4">Nusu Supports over 30 different currencies from different countries allover the world.</string>
+    <string name="slide_desc_3">It classifies items as Expenses and Cash items. Expenses like rent, mortgage, in monthly loan-payments, and in payments for taxes and other accounts payable.</string>
+    <string name="slide_desc_2">Keep track of things like cash going in and out of the business or at a personal level.</string>
+    <string name="slide_desc_1">Nusu is a financial record keeping assistant that runs a simple cash flow report.</string>
+    <string name="slide_title_1">Hello, Welcome</string>
+    <string name="slide_title_2">Why Use Nusu ?</string>
+    <string name="slide_title_3">How It Works</string>
+    <string name="slide_title_4">Currencies</string>
+    <string name="twitter_logo">twitter logo</string>
+    <string name="facebook_icon">facebook logo</string>
+    <string name="about_dev_link">https://www.facebook.com/havoc64649</string>
+    <string name="ooops_connection_failed">Ooops! Connection Failed.</string>
+    <string name="no_data">No Data !</string>
+    <string name="nusu_logo">nusu_logo</string>
+
+
+</resources>

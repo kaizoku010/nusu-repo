@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "333514063953",
+    "firebase_url": "https://mycashflow-1470429772365.firebaseio.com",
+    "project_id": "mycashflow-1470429772365",
+    "storage_bucket": "mycashflow-1470429772365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333514063953:android:ffb9ac692d82b4d7",
+        "android_client_info": {
+          "package_name": "com.wordpress.dixontechnologies.Mycashflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333514063953-p42snqbqaarr10qrfg00fdnmfd2toq2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.dixontechnologies.Mycashflow",
+            "certificate_hash": "83426e755135bb842670d5639a8884de2bb15b2f"
+          }
+        },
+        {
+          "client_id": "333514063953-2nvsq2ac6a9v2g9ccftio95433h9m1gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.dixontechnologies.Mycashflow",
+            "certificate_hash": "40cb8e351d04318da2491acf947c6feb3369a990"
+          }
+        },
+        {
+          "client_id": "333514063953-hbq380kdu6vrpck71ddkomqmnjfp6sjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.dixontechnologies.Mycashflow",
+            "certificate_hash": "20c49501d83d808ac506ac454fdd75f630243f75"
+          }
+        },
+        {
+          "client_id": "333514063953-f6f7272klgllmd8914iphbpvce2vlcos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBROloclPpob_NP3KL6M04AKkXj0xPoe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333514063953-f6f7272klgllmd8914iphbpvce2vlcos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2263309867862585~1673903354"
+    }
+  ],
+  "configuration_version": "1"
+}

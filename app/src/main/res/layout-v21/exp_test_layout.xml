@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/swipe_layout_exp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:background="@color/textColorPrimary"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/exp_bin"
+                android:layout_width="30dp"
+
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/delete_ic" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--holder_letter-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/exp_holder_root_exp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/holder_root_exp"
+            android:layout_height="match_parent">
+            <!--holder_letter-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/letter_"
+                android:layout_alignParentTop="true"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="A"
+                    android:id="@+id/alpha_tv_exp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="70sp"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <!--Lower Frame-->
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_below="@id/letter_"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/item__exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="0dp"
+                        android:layout_centerVertical="true"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="jjJJ"
+                        android:textColor="@color/whiteTextColor" />
+
+                    <org.fabiomsr.moneytextview.MoneyTextView
+                        android:id="@+id/cost___"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        app:symbolTextColor="@color/textColorPrimary"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item__exp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="-2dp"
+                        android:text="20000"
+                        app:baseTextColor="@color/whiteTextColor"
+                        app:decimalSeparator="@string/default_decimal_separator"
+                        app:includeDecimalSeparator="true"
+                        app:symbolGravity="end"
+                        app:symbolTextSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/time_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cost___"
+                        android:layout_marginStart="2dp"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="22:33:83pm"
+                        android:textColor="@color/whiteTextColor"
+                         />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</android.support.v7.widget.CardView>

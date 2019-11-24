@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="3dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:theme="@style/Base.CardView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteTextColor">
+
+            <TextView
+                android:id="@+id/exp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="fid"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:src="@mipmap/exp_ic_new" />
+
+            <RelativeLayout
+                android:id="@+id/time_nd_date"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/x"
+                android:layout_toStartOf="@+id/x"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/exp_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="oct 21, 2016 \n 22:33:83pm"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="0dp">
+
+                <ImageView
+                    android:id="@+id/pop_up_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39sp"
+                    android:src="@mipmap/yo_ex" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exp_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="theProduct"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/time_item_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/exp_item_name"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif"
+                    android:text="9:00pm"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/relativeLayout"
+                android:layout_toLeftOf="@id/time_nd_date"
+                android:layout_toRightOf="@+id/relativeLayout"
+                android:layout_toStartOf="@id/time_nd_date"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exp_item_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="200000"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

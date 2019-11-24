@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cash_map">CASH MAP</string>
+    <string name="all_entries_and_a_location_of_each_on_the_googleplay_map">All entries and a location of each on the GooglePlay Map.</string>
+    <string name="location_name">Location_name</string>
+    <string name="rest_app">rest app</string>
+    <string name="about_nusu">A collection of information about how you use your money is important, thats why i built Nusu.Financial awareness is as important as keeping up with the stock markert, or something like being updated about anything specific, at a business scale, not having this information can be catastrophic at a cosmic level. Nusu provides a simple list of items of how you spend and how you earn because even the smallest detail matters when it comes to aweraness.</string>
+</resources>

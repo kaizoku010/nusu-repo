@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/textColorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".CurrencySlide">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/title_template_"
+        android:background="@color/primaryLightColor"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center|top"
+            android:textSize="23sp"
+            android:id="@+id/title_header"
+            android:layout_centerInParent="true"
+            android:layout_margin="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Nusu Supports Over 20 Different Currencies From Around The World." />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/tvb"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/title_template_"
+            android:text="Pick a currency symbol to use. "
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spinner__"
+            android:layout_below="@id/tvb"
+            android:spinnerMode="dropdown"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/spinner_bg"
+            android:dropDownWidth="300dp"
+            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+            android:paddingRight="14dp"
+            android:popupBackground="@android:color/white"
+            android:popupElevation="3dp"
+            android:stateListAnimator="@drawable/spinner_sla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

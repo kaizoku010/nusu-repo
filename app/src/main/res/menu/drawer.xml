@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/about"
+        >
+
+        <item android:id="@+id/about_nusu"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Tips">
+
+        </item>
+
+
+
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/help_"
+            android:title="@string/about_amp_privacy"/>
+
+    </group>
+
+
+    <group
+        android:id="@+id/settings">
+
+        <!--<item android:id="@+id/view_ad"-->
+            <!--android:icon="@drawable/common_full_open_on_phone"-->
+            <!--android:title="Currencey">-->
+        <!--</item>-->
+
+
+        <item android:title="Reset App"
+            android:id="@+id/settings_id"
+            android:icon="@drawable/settings_"
+            />
+
+
+        <item
+            android:id="@+id/checkUpdates"
+            android:icon="@drawable/upgrade_ic"
+            android:title="Rate Us"/>
+
+    </group>
+
+
+    </menu>
+

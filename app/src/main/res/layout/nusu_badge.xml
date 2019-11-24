@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textview_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="@dimen/tab_text_max_width"
+        android:singleLine="true"
+        android:text="Section"
+        android:textAllCaps="true" />
+
+
+    <TextView
+        android:id="@+id/textview_tab_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/badge_background"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:padding="1dp"
+        android:text="1"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+</LinearLayout>

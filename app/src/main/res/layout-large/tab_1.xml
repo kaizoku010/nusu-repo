@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:background="@color/whiteTextColor"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/swipe_cash"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cash_swipe_layout"
+            android:gravity="top"
+            android:layout_height="wrap_content">
+
+
+            <!--recyclerview container-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rv_container"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/empty_view_cash"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="no entries saved,tap below to start"
+            android:src="@drawable/new_error_" />
+
+        <!--            tools:mockup_opacity="23dp"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:id="@+id/swipe_to_expenses"
+            android:gravity="center"
+            android:layout_below="@id/rv_container"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"
+            android:text="@string/swipe_left_to_view_yo_expenses"
+            android:textColor="#96bdbdbd"
+            style="@style/TextAppearance.Design.HelperText"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/summary_cash"
+            style="@style/TextAppearance.Design.HelperText"
+            android:gravity="center"
+            android:layout_below="@+id/empty_view_cash"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"
+            android:text="Yo summary will appear here after adding some data..."
+            android:textColor="#96bdbdbd"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

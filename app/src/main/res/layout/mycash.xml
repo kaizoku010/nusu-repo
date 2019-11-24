@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cash_bottomSheetLayout"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_peekHeight="0dp"
+    app:behavior_hideable="true"
+    android:layout_margin="10dp"
+    style="@style/nusuBtmShtStyle"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/textColorPrimary"
+        app:cardElevation="15dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/textColorPrimary"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/scr"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/content_"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"    >
+
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:background="@color/whiteTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleDelayClick="true"
+                            android:id="@+id/dismiss__"
+                            app:mrl_rippleDimension="32dp"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content">
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Drag To Close"
+                                    android:layout_centerVertical="true"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    android:layout_centerHorizontal="true"
+                                    android:id="@+id/pull_to_add_txtview"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textColor="@color/that_light_green"
+                                    android:layout_toEndOf="@+id/dismiss"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:src="@mipmap/panel_up"
+                                    android:rotation="180"
+                                    android:layout_width="30dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="@string/back_to_home_screen"
+                                    android:gravity="center"
+                                    android:id="@+id/dismiss"
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/whiteTextColor"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ff_la"
+                            android:layout_width="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                            android:theme="@style/NusuTextInputLayout"
+                            android:layout_margin="5dp"
+                            app:errorEnabled="true"
+                            android:textColorHint="@color/colorAccent"
+                            app:helperText="test text"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextAppearance="@color/colorAmber"
+                            app:errorTextAppearance="@color/red"
+                            app:boxStrokeColor="@color/colorAccent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/entry_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:cursorVisible="true"
+                                android:textColorHighlight="@color/material_gray"
+                                android:textColor="@color/black"
+                                android:textSelectHandle="@color/colorAccent"
+                                android:textColorHint="@color/colorAccent"
+                                android:hint="@string/amount"
+                                android:includeFontPadding="true"
+                                android:singleLine="true"
+                                android:layout_alignParentStart="true"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_below="@id/ff_la"
+                            android:layout_width="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                            android:layout_margin="9dp"
+                            app:errorEnabled="true"
+                            android:textColorHint="@color/black"
+                            app:helperText="test text"
+                            android:theme="@style/NusuTextInputLayout"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextAppearance="@color/black"
+                            app:boxStrokeColor="@color/colorAccent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:digits="0123456789.,$"
+                                android:cursorVisible="true"
+                                android:textColorHighlight="@color/material_gray"
+                                android:textColor="@color/black"
+                                android:textSelectHandle="@color/colorAccent"
+                                android:id="@+id/entry_two"
+                                android:textColorHint="@color/colorAccent"
+                                android:hint="@string/amount"
+                                android:includeFontPadding="true"
+                                android:singleLine="true"
+                                android:layout_alignParentStart="true"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/textColorPrimary"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.CardView
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            android:layout_width="200dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            app:cardElevation="5dp"
+                            android:layout_height="wrap_content">
+                            <Button
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColorPrimary"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/save"
+                                android:gravity="center"
+                                android:id="@+id/btn_save_dialog"
+                                android:textSize="15sp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:background="@color/transparent"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/arcl_gray"
+                            android:layout_height="wrap_content">
+                            <Button
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_overlay"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Cancle"
+
+                                android:id="@+id/btn_close_dialog"
+                                android:layout_gravity="bottom"
+                                android:clickable="true"
+                                android:background="@color/transparent"/>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/scr"
+                        android:visibility="visible"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:id="@+id/tip"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Tips :"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/return_"
+                            android:layout_below="@id/tip"
+                            android:layout_marginTop="5dp"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="0dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=" . Tap the green indicator above to close dialog."
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/return_"
+                            android:layout_marginTop="5dp"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:visibility="gone"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=" Pull down to close"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_save"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/content_"
+                    android:layout_height="150dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

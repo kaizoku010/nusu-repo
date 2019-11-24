@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/transparent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        app:titleTextColor="@color/whiteTextColor"
+        style="@style/nusuActionBarStyle"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Nusu"
+        app:navigationIcon="@mipmap/back_ic_two"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"/>
+
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@android:id/list_container"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

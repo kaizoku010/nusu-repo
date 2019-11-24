@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/whiteTextColor"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="match_parent">
+
+        <com.wordpress.dixontechnologies.Mycashflow.FixedRecyclerView
+            android:id="@+id/rv2"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:spanCount="@android:integer/config_longAnimTime"
+            app:theme="@style/Widget.AppCompat.ListView"
+            app:stackFromEnd="true"
+            android:verticalScrollbarPosition="right"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fadeScrollbars="true"
+            android:fadingEdge="horizontal"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/empty_view2"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/new_error_"
+            android:contentDescription="@string/no_data_to_display" />
+    </RelativeLayout>
+</LinearLayout>

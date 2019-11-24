@@ -1,0 +1,168 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme.
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+    -->
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="android:fullDark">@color/black</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:activityOpenEnterAnimation">@anim/fab_slide_in_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fab_scale_down</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--   <item name="cornerRadiusPrimary">8dp</item>
+           <item name="cornerStylePrimary">cut</item>
+           <item name="cornerRadiusSecondary">4dp</item>
+           <item name="cornerStyleSecondary">cut</item>-->
+
+        <item name="android:colorEdgeEffect" tools:ignore="NewApi">@color/colorAccent</item>
+        <!--  <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>-->
+        <item name="android:dialogLayout">@style/Base.Theme.MaterialComponents.Dialog</item>
+        <item name="android:actionOverflowButtonStyle">@style/Share_me</item>
+
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/arcl_gray</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="intText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="NusuTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="helperTextTextAppearance">@style/intText</item>
+        <item name="android:bottomDark">@color/colorPrimaryDark</item>
+        <item name="android:childIndicator">@color/colorPrimaryDark</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/colorAccent</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+        <item name="android:colorActivatedHighlight">@color/colorPrimary</item>
+        <item name="android:colorFocusedHighlight">@color/colorPrimary</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="NusuTheme" parent="Theme.AppCompat.NoActionBar" >
+        <!-- Customize your theme here. -->
+        <!--        <item name="android:fullDark">@color/black</item>-->
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:switchStyle">@style/Preference.SwitchPreference.Material</item>
+        <item name="android:activityOpenEnterAnimation">@anim/fab_slide_in_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fab_scale_down</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackgroundFloating">@color/arcl_gray</item>
+        <item name="panelBackground">@color/arcl_gray</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:checkedButton">@integer/google_play_services_version</item>
+        <item name="android:colorEdgeEffect" tools:ignore="NewApi">@color/colorAccent</item>
+        <item name="android:dialogLayout">@style/Base.Theme.MaterialComponents.Dialog</item>
+        <item name="android:actionOverflowButtonStyle">@style/Share_me</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/textColorPrimary</item>
+        <item name="android:textColorSecondaryInverse">@color/textColorPrimary</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog</item>
+        <item name="android:windowEnterTransition">@transition/change_bounds_</item>
+        <item name="android:windowExitTransition">@transition/change_bounds_</item>
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">@transition/change_bounds_</item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_bounds_</item>
+
+    </style>
+
+    <style name="NusuTheme.NoActionbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <style name="NusuTheme.Transparent" parent="NusuTheme">
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        </style>
+
+
+    <style name = "AppAlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name ="colorAccent">@color/colorAccent</item>
+        <item name="android:titleTextColor">@color/colorAccent</item>
+        <item name="android:keyTextColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <!-- <style name="AppTheme.Transparent" parent="AppTheme">
+         <item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowBackground">@android:color/transparent</item>
+         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+     </style>-->
+
+    <!--
+        <style name="NewTheme" parent="Base.Theme.MaterialComponents.Light.DarkActionBar">
+            <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+            <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+            <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+
+        </style>-->
+
+
+    <style name="Share_me" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:src">@mipmap/share_me</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Widget.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--       <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>-->
+
+
+    <style name="NusuStyleTing" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColorPrimary">@color/whiteTextColor</item>
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="colorAccent">?attr/colorAccent</item>
+
+    </style>
+
+
+
+    <style name="setting_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorSwitchThumbNormal">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/whiteTextColor</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:colorForeground">@color/whiteTextColor</item>
+    </style>
+
+    <style name="nusuBtmShtStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorBackgroundFloating">@color/arcl_gray</item>
+    </style>
+
+
+</resources>

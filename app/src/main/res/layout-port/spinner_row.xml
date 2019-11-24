@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:background="#FFFFFFFF"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    tools:ignore="Overdraw">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_data"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Dollars"
+        android:background="@drawable/abc_spinner_mtrl_am_alpha"
+        android:backgroundTint="@color/colorAccent"
+        android:ellipsize="marquee"
+        style="?attr/spinnerDropDownItemStyle"
+        android:textColor="#0d6c12"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

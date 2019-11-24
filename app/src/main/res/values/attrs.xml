@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImprovedSwipeLayoutAttrs">
+        <attr name="scrollableChildId" format="reference" />
+    </declare-styleable>
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="highlightEnable" format="boolean"/>
+        <attr name="highlightColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="AvatarImageView">
+
+        <attr name="avatarBackgroundColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="state" format="enum">
+        <enum name="INITIAL" value="1"/>
+        <enum name="IMAGE" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+
+
+<!--
+
+        <declare-styleable name="__NusuSplashView__">
+            <attr name="removeFromParentOnEnd" format="boolean"/>
+            <attr name="circleRadius" format="reference"/>
+            <attr name="rotationRadius" format="reference"/>
+            <attr name="rotationDuration" format="integer"/>
+            <attr name="splashDuration" format="integer"/>
+            <attr name="splashBackgroundColor" format="color"/>
+            <attr name="circleColors" format="reference"/>
+        </declare-styleable>
+-->
+
+
+    <declare-styleable name="NusuSwipeLayout">
+            <attr name="dragFromEdge">
+                <flag name="left" value="1" />
+                <flag name="right" value="2" />
+            </attr>
+        </declare-styleable>
+    <declare-styleable name="nusuTabLayout">
+        <attr format="dimension" name="nusu_BadgeTextSize"/>
+        <attr format="color" name="nusu_BadgeSelectedTextColor"/>
+        <attr format="color" name="nusu_BadgeBackgroundColor"/>
+        <attr format="color" name="nusu_BadgeSelectedBackgroundColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="__NusuNusuSplashView__">
+        <attr name="removeFromParentOnEnd" format="boolean"/>
+        <attr name="circleRadius" format="reference"/>
+        <attr name="rotationRadius" format="reference"/>
+        <attr name="rotationDuration" format="integer"/>
+        <attr name="splashDuration" format="integer"/>
+        <attr name="splashBackgroundColor" format="color"/>
+        <attr name="circleColors" format="reference"/>
+    </declare-styleable>
+
+    <dimen name="badge_text_size">11sp</dimen>
+    <dimen name="tab_text_max_width">60dp</dimen>
+
+</resources>

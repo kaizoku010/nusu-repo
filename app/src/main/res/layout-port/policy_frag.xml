@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:background="@color/textColorPrimary"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+
+            ads:cardBackgroundColor="@color/textColorPrimary"
+            android:theme="@style/Base.CardView"
+            ads:cardCornerRadius="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/blah"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="true"
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                 android:textStyle="bold"
+                    android:text="@string/privacy_policy_header"
+                    android:id="@+id/textView9"
+
+                    android:fontFamily="sans-serif"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_respect_your_privacy"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textView10"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView9"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="@string/we_do_not_collect_user_information_during_your_usage_of_this_app"
+                    android:id="@+id/textView11"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_below="@+id/textView10"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/however_as_you_download_this_app_from_the_google_play_store_through_the_download_statistics_we_are_able_to_know_anonymously_about_your_device_model_and_os_version_telecom_operator_country_install_and_uninstall_operation_of_this_app_app_crash_report"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+<!--
+    <com.google.android.gms.ads.AdView
+
+        ads:adSize="BANNER"
+        android:id="@+id/adView_privacy"
+        ads:adUnitId="@string/banner_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scroll_policy"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">-->
+
+
+
+
+
+
+</RelativeLayout>

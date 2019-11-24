@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_peekHeight="0dp"
+    app:behavior_hideable="true"
+    android:elevation="5dp"
+    android:id="@+id/exp_bottomSheetLayout"
+    android:layout_margin="10dp"
+    style="@style/nusuBtmShtStyle"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/textColorPrimary"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/textColorPrimary"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/scr"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/content_"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"    >
+
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:background="@color/whiteTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleDelayClick="true"
+                            android:id="@+id/dismiss__"
+                            app:mrl_rippleDimension="32dp"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content">
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Drag To Close"
+                                    android:layout_centerVertical="true"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    android:layout_centerHorizontal="true"
+                                    android:id="@+id/pull_to_add_txtview"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textColor="@color/that_light_green"
+                                    android:layout_toEndOf="@+id/dismiss"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:id="@+id/dismiss_exp"
+                                    android:rotation="180"
+                                    android:layout_width="30dp"
+                                    android:src="@mipmap/panel_exp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:contentDescription="@string/back_to_home_screen"
+                                    android:gravity="center"
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/whiteTextColor"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ff"
+                            android:layout_width="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:theme="@style/NusuTextInputLayout"
+                            android:layout_margin="5dp"
+                            app:errorEnabled="true"
+                            android:textColorHint="@color/colorAccent"
+                            app:helperText="test text"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextAppearance="@color/red"
+                            app:boxStrokeWidth="4dp"
+                            app:errorTextAppearance="@color/red"
+                            app:boxStrokeColor="@color/colorAccent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/entry_one_exp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textCapWords"
+                                android:cursorVisible="true"
+                                android:textColorHighlight="@color/material_gray"
+                                android:textColor="@color/black"
+                                android:textSelectHandle="@color/colorAccent"
+                                android:textColorHint="@color/colorAccent"
+                                android:hint="@string/item"
+                                android:includeFontPadding="true"
+                                android:singleLine="true"
+                                android:layout_alignParentStart="true"  />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_below="@id/ff"
+                            android:layout_width="match_parent"
+                            android:layout_margin="5dp"
+                            app:errorEnabled="true"
+                            android:textColorHint="@color/black"
+                            app:helperText="test text"
+                            android:theme="@style/NusuTextInputLayout"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextAppearance="@color/black"
+                            app:boxStrokeColor="@color/colorAccent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/entry_two_exp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:digits="0123456789.,$"
+                                android:cursorVisible="true"
+                                android:textColorHighlight="@color/material_gray"
+                                android:textColor="@color/black"
+                                android:textSelectHandle="@color/colorAccent"
+                                android:textColorHint="@color/colorAccent"
+                                android:hint="@string/amount"
+                                android:includeFontPadding="true"
+                                android:singleLine="true"
+                                android:layout_alignParentStart="true"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="4dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp"
+                            app:cardBackgroundColor="@color/red"
+                            android:layout_gravity="center">
+
+
+
+
+
+                            <Button
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColorPrimary"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/save"
+                                android:soundEffectsEnabled="true"
+                                android:id="@+id/btn_save_dialog_exp"
+                                android:textSize="15sp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:background="@color/transparent"/>
+
+
+                        </android.support.v7.widget.CardView>
+                        <View
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:layout_height="10dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/scr"
+                        android:visibility="visible"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:id="@+id/tip"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Tips :"
+                            android:textColor="@color/red"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/return_"
+                            android:layout_below="@id/tip"
+                            android:layout_marginTop="5dp"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="0dp"
+                            android:textColor="@color/red"
+                            android:text=" . Drag dow to close"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/return_"
+                            android:layout_marginTop="5dp"
+                            app:fontFamily="sans-serif-condensed"
+                            android:textStyle="normal"
+                            android:visibility="gone"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=" Pull down to close"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_save_exp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/content_"
+                    android:layout_height="150dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

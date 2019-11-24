@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--
+
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/real_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_above="@id/nusu_avatar"
+        android:tag="balance_totals"
+        android:text="Balance"
+        android:textColor="@color/whiteTextColor"
+        android:textFontWeight="1dp"
+        android:textSize="25sp"
+        />
+
+
+    <android.support.design.chip.Chip
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Chip"
+        android:id="@+id/nusu_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:text="@string/balance"
+        android:textSize="15sp"
+        app:chipIcon="@mipmap/nusu_logo"
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="10dp"
+        android:tag="#avatar_dixon">
+
+    </android.support.design.chip.Chip>
+
+
+-->
+
+
+</RelativeLayout>

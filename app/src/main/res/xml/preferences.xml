@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Change Currency Type">
+        <ListPreference
+            android:key="mulla_type"
+            android:dialogTitle="Change Currency"
+            android:summary="Choose the type of currency to use"
+            android:entries="@array/currency_entries"
+            android:entryValues="@array/mulla_val"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About Developer">
+
+        <Preference android:key="dev_log"
+            android:summary="Contact developer directly"
+            android:action="android.intent.action.VIEW"
+            android:data="@string/about_dev_link"/>
+
+    <Preference
+        android:summary="Open Acrhive"
+        android:title="Open up">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.wordpress.dixontechnologies.Mycashflow.Enkozesa"
+            android:targetPackage="com.wordpress.dixontechnologies.Mycashflow"/>
+
+
+    </Preference>
+
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

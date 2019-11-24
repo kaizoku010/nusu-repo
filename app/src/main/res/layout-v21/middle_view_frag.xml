@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whiteTextColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:nestedScrollingEnabled="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:id="@+id/line__"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/arcs"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/textColorPrimary"
+             android:layout_marginEnd="20dp"
+              android:layout_marginBottom="20dp"
+           android:layout_marginTop="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:cardElevation="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/ic_ffffff"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="111 Cashpi Items"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tits4"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Total Cash"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tits"
+                    android:layout_below="@id/tits4"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content" />
+
+                <org.fabiomsr.moneytextview.MoneyTextView
+                    android:id="@+id/cash_tots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tits"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                        app:symbolTextSize="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:maxLines="1"
+                    android:text="10,00UGX"
+                    app:baseTextColor="@color/colorAccent"
+                    app:decimalSeparator="."
+                    app:symbolTextColor="@color/colorPrimaryDark" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/nusu_arc"
+            app:cardElevation="5dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="@color/purpleMaterialColor"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@id/arcs"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_ffffff4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:id="@+id/zets1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp">
+
+
+                    <TextView
+                        android:id="@+id/tits2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="118 Expi Items"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tits3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tits2"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Total Expenses"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="normal" />
+
+                    <org.fabiomsr.moneytextview.MoneyTextView
+                        android:id="@+id/exp_tots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tits3"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:maxLines="1"
+                        android:text="10,00UGX"
+                        app:symbolTextSize="10dp"
+                        app:baseTextColor="@color/red"
+                        app:decimalSeparator="."
+                        app:symbolTextColor="@color/colorAccent" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/nusu_arc2"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@id/nusu_arc"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:id="@+id/zets"
+                    >
+                    <com.hookedonplay.decoviewlib.DecoView
+                        android:id="@+id/nusu_exp_arc"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        app:dv_lineWidth="10dp" />
+                    <com.hookedonplay.decoviewlib.DecoView
+                        android:id="@+id/nusu_cash_arc"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        app:dv_lineWidth="15dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/zets"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/c_older"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:id="@+id/cash_ic"
+
+                        android:layout_marginTop="5dp"
+                        android:background="@color/red"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/cash_ic"
+                        android:text="Expenses"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/zets"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/e_older"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/c_older"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:id="@+id/exp_ic"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorAccent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/tot_exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/exp_ic"
+                        android:text="Cash"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/nusu_arc3"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@id/nusu_arc2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.startapp.android.publish.ads.banner.banner3d.Banner3D
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ad__"
+                    android:layout_height="wrap_content"/>
+    </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

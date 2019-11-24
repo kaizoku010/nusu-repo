@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorPrimary"
+    tools:context=".ViewAd">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:background="@color/whiteTextColor"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ad_failed"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/error_load_big_ad"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/oops_daisy"
+            android:layout_below="@id/ad_failed"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:text="@string/ooops_connection_failed"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_below="@+id/oops_daisy"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="200dp"
+                style="@style/Widget.MaterialComponents.Button"
+                android:text="Try Again"
+                android:background="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/refresh_btn"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fitsSystemWindows="true">
+<!--
+                <com.google.android.gms.ads.A
+                    android:id="@+id/fullscreen_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />-->
+    </FrameLayout>
+</RelativeLayout>
